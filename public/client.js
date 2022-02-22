@@ -142,19 +142,5 @@ animate();
 
 // var video = document.querySelector("#video_element");
 
-const video = document.getElementById( 'video_element' );
 
-function stream_vid (){
-    if (navigator.mediaDevices.getUserMedia) {
-        navigator.mediaDevices.getUserMedia({video: true})
-        .then(function(stream) {
-          video.srcObject = stream;
-        })
-        .catch(function (error){
-          alert("Something went wrong \nReload page");
-        })
-      }
-}
-// object.scale.set(4,4,4);
-stream_vid()
 
