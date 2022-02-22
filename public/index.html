@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>
+      Hokimi
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        overflow: hidden;
+        margin: 0px;
+      }
+      
+    </style>
+    Hokimi
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./build/three.module.js",
+          "three/examples/jsm/controls/OrbitControls": "./jsm/controls/OrbitControls.js",
+          "three/examples/jsm/loaders/OBJLoader": "./jsm/loaders/OBJLoader.js",
+          "three/examples/jsm/loaders/FBXLoader": "./jsm/loaders/FBXLoader.js",
+          "three/examples/jsm/loaders/MTLLoader": "./jsm/loaders/MTLLoader.js",
+          "three/examples/jsm/loaders/GLTFLoader": "./jsm/loaders/GLTFLoader.js",
+          "three/examples/jsm/libs/stats.module": "./jsm/libs/stats.module.js",
+          "three/examples/jsm/libs/dat.gui.module": "./jsm/libs/dat.gui.module.js",
+          "dat.gui": "./build/dat.gui.module.js"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+
+    <script type="module" src="client.js"></script>
+    <div class="container">
+      <video autoplay="true" id="video_element"></video>
+      <div class="overlay" id="overlay">
+              <div class="slidecontainer">
+      <input
+        type="range"
+        min="0.25"
+        max="2"
+        value="0.25"
+        class="slider"
+        id="myRange"
+      />
+    </div>
+        <!-- Text you'd like to overlay -->
+        <p id="demo"></p>
+        <p id="myRange"></p>
+        <!-- https://www.w3schools.com/howto/howto_js_rangeslider.asp -->
+      </div>
+      <!-- <div class="overlay2" id="canvas"></div> -->
+      <canvas class="overlay2" id="canvas">
+
+      </canvas>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "hokimi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dat.gui": "^0.7.7",
+    "express": "^4.17.2",
+    "three": "^0.137.5"
+  }
+}
