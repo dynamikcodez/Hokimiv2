@@ -141,6 +141,3 @@ renderer.render(scene, camera);
 animate();
 
 // var video = document.querySelector("#video_element");
-
-
-
