@@ -33,7 +33,7 @@ manager.onError = function ( url ) {
 
 const loader = new GLTFLoader(manager);
 
-let object;
+let object; //reference to loaded object
 // this method is what loads the 3d chair or whatever object put into the qoutes,
 loader.load('threed_objects/SheenChair.glb',
 function(gltf){
