@@ -33,16 +33,78 @@ manager.onError = function ( url ) {
 const loader = new GLTFLoader(manager);
 
 let object;
+//show input 
+document.getElementById("button").onclick = function(){changeFilter()};
+function changeFilter(){
+    document.getElementById("imageFile").style.display = 'block';
+}
+//remove previous object
+document.getElementById("check").onclick = function(){checkFile()};
+function removeEntity(object) {
+    if(scene.remove(object ))
+        alert("Just removed" + object)
+    else
+        alert("error")
+    animate();
+}
 
-loader.load('threed_objects/SheenChair.glb',
+function checkFile(result){
+    //Get the file input element by its id 
+    var fileInput = document.getElementById('imageFile');
+    //Get the file name
+    var fileName = fileInput.files[0].name;
+    // Regular expression for file extension.
+    var patternFileExtension = /\.([0-9a-z]+)(?:[\?#]|$)/i;
+    //Get the file Extension 
+    var fileExtension = (fileName).match(patternFileExtension);
+    // alert(fileExtension);
+    if(fileExtension == '.gltf,gtf' || fileExtension == '.glb,glb'){
+        //remove old object
+        removeEntity(object)
+        loader.load(result,
+        function(gltf){
+            object = gltf.scene;
+            scene.add(gltf.scene);
+            alert("Uploaded " + fileName + " succesfully.")
+        }, undefined, function ( error ) {
+
+            console.error( error );
+        } );
+    }  
+
+
+    else    
+        alert("Sorry, " + fileName + " is invalid");
+    
+}
+//uploading user file using URL
+document.getElementById("imageFile").onchange = function(){previewFile()};
+function previewFile() {
+    // const preview = document.querySelector('img');
+    const file = document.querySelector('input[type=file]').files[0];
+    const reader = new FileReader();
+  
+    reader.addEventListener("load", function () {
+      // convert image file to base64 string
+        checkFile(reader.result);
+    }, false);
+  
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+}
+
+
+loader.load("threed_objects/scene_2.glb",
 function(gltf){
+    // scene.remove(gltf.scene);
     object = gltf.scene;
     scene.add(gltf.scene);
 }, undefined, function ( error ) {
 
-	console.error( error );
-
+    console.error( error );
 } );
+
 
 
 window.addEventListener(
@@ -97,9 +159,9 @@ function animate() {
 
     slider.step = 0.25
     var x = slider.value
-slider.oninput = function() {
-  output.innerHTML = this.value;
-object.scale.set(x,x,x);
+    slider.oninput = function() {
+    output.innerHTML = this.value;
+    object.scale.set(x,x,x);
 }
 
 var xSpeed = 0.00001;

@@ -1,20 +1,28 @@
 *{
+  /* display: flex;
+  flex-direction: column; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+video{
   width: 100%;
   height: 100vh;
+  transform: rotateY(180deg);
+}
+canvas{
+  width: 80%;
+  height: 70%;
 }
 .container{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 90%;
   height: 70%;
-  border: 5px solid #000;
+  /* border: 5px solid #000; */
+  /* font-size: smaller; */
 }
 #video_element{
   width: 100%;
@@ -29,7 +37,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 3em;
+  font-size: 1em;
   z-index: 2;
 }
 .overlay2{
@@ -38,12 +46,13 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 3em;
+  font-size: 1em;
   z-index: 1;
 }
 
 .slidecontainer {
   width: 100%; /* Width of the outside container */
+  top: 100%;
 }
 
 /* The slider itself */
@@ -70,14 +79,14 @@ body{
   appearance: none;
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
-  background: #04AA6D; /* Green background */
+  background: crimson; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 
 .slider::-moz-range-thumb {
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
-  background: #04AA6D; /* Green background */
+  background: crimson; /* Green background */
   cursor: pointer; /* Cursor on hover */
 }
 

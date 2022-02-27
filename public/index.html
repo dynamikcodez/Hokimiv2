@@ -30,7 +30,7 @@
         }
       }
     </script>
-  </head>
+  </head> 
 
   <body>
 
@@ -41,21 +41,25 @@
     <div class="container">
       <video autoplay="true" id="video_element"></video>
       <div class="overlay" id="overlay">
-              <div class="slidecontainer">
-      <input
-        type="range"
-        min="0.25"
-        max="2"
-        value="0.25"
-        class="slider"
-        id="myRange"
-      />
-    </div>
-        <!-- Text you'd like to overlay -->
-        <p id="demo"></p>
-        <p id="myRange"></p>
-        <!-- https://www.w3schools.com/howto/howto_js_rangeslider.asp -->
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="0.25"
+            max="2"
+            value="0.25"
+            class="slider"
+            id="myRange"
+          />
+        </div>
+          <!-- Text you'd like to overlay -->
+          <p id="demo"></p>
+          <p id="myRange"></p>
+          
       </div>
+      <button id = 'button' onclick="changeFilter()">Got a 3D-model you'd like to test? Upload yours!</button>
+      <input type="file" id="imageFile" accept="image/*" onchange="previewFile()" style="display: none">
+      <button id = 'check' onclick="checkFile()">Enter</button>
+
       <!-- <div class="overlay2" id="canvas"></div> -->
       <canvas class="overlay2" id="canvas">
       </canvas>
@@ -63,19 +67,19 @@
       <script>
         const video = document.getElementById( 'video_element' );
 
-function stream_vid (){
-    if (navigator.mediaDevices.getUserMedia) {
-        navigator.mediaDevices.getUserMedia({video: true})
-        .then(function(stream) {
-          video.srcObject = stream;
-        })
-        .catch(function (error){
-          alert("Something went wrong \nReload page");
-        })
-      }
-}
-// object.scale.set(4,4,4);
-stream_vid()
+        function stream_vid (){
+            if (navigator.mediaDevices.getUserMedia) {
+                navigator.mediaDevices.getUserMedia({video: true})
+                .then(function(stream) {
+                  video.srcObject = stream;
+                })
+                .catch(function (error){
+                  alert("Something went wrong \nReload page");
+                })
+              }
+        }
+        // object.scale.set(4,4,4);
+        stream_vid()
       </script>
 
     </div>
