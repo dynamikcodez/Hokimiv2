@@ -1,7 +1,8 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
-import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader'
+// import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
+// import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader'
+// commented out because we are just dealing with gltf 3d objects
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 const manager = new THREE.LoadingManager();
@@ -33,7 +34,7 @@ manager.onError = function ( url ) {
 const loader = new GLTFLoader(manager);
 
 let object;
-
+// this method is what loads the 3d chair or whatever object put into the qoutes,
 loader.load('threed_objects/SheenChair.glb',
 function(gltf){
     object = gltf.scene;
@@ -98,8 +99,8 @@ function animate() {
     slider.step = 0.25
     var x = slider.value
 slider.oninput = function() {
-  output.innerHTML = this.value;
-object.scale.set(x,x,x);
+//   output.innerHTML = this.value;
+object.scale.set(x,x,x); // sets the size/depth of the object to slider value
 }
 
 var xSpeed = 0.00001;
@@ -109,6 +110,7 @@ var ySpeed = 0.00001;
 
     document.addEventListener("keydown", onDocumentKeyDown, false);
     function onDocumentKeyDown(event) {
+// 	    keyboard controls to move object around(W(up)A(left)S(down)D(right))
         var keyCode = event.which;
         if (keyCode == 87) {
             object.position.y += ySpeed;
@@ -139,5 +141,3 @@ renderer.render(scene, camera);
 }
 
 animate();
-
-// var video = document.querySelector("#video_element");
