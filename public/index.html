@@ -14,7 +14,6 @@
       }
       
     </style>
-    Hokimi
     <script type="importmap">
       {
         "imports": {
@@ -34,12 +33,14 @@
 
   <body>
 
+
     <!-- <script type="module" src="../public/three.module.js"></script>
     <script type="module" src="../public/GLTFLoader.js"></script> -->
 
     <script type="module" src="client.js"></script>
     <div class="container">
-      <video autoplay="true" id="video_element"></video>
+        <h1>hokimi</h1>
+        <video autoplay="true" id="video_element"></video>
       <div class="overlay" id="overlay">
         <div class="slidecontainer">
           <input
@@ -56,9 +57,11 @@
           <p id="myRange"></p>
           
       </div>
-      <button id = 'button' onclick="changeFilter()">Got a 3D-model you'd like to test? Upload yours!</button>
-      <input type="file" id="imageFile" accept="image/*" onchange="previewFile()" style="display: none">
-      <button id = 'check' onclick="checkFile()">Enter</button>
+      <div class="extra_stuff">
+        <button id = 'button' onclick="changeFilter()">Got a 3D-model you'd like to test? Upload yours!</button>
+        <input type="file" id="imageFile" accept="image/*" onchange="previewFile()" style="display: none">
+        <button id = 'check' onclick="checkFile()">Enter</button>
+      </div>
 
       <!-- <div class="overlay2" id="canvas"></div> -->
       <canvas class="overlay2" id="canvas">
