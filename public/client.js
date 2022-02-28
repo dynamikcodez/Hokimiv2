@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
-import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader'
+// import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader'
+// import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
 const manager = new THREE.LoadingManager();
@@ -203,3 +203,34 @@ renderer.render(scene, camera);
 animate();
 
 // var video = document.querySelector("#video_element");
+//code for index.html
+var video = document.querySelector("#video_element");
+navigator.getUserMedia = (
+  navigator.getUserMedia ||
+  navigator.webkitGetUserMedia ||
+  navigator.mozGetUserMedia ||
+  navigator.msGetUserMedia
+);
+
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({video: true})
+  .then(function(stream) {
+    video.srcObject = stream;
+  })
+  .catch(function (error){
+    alert("Something went wrong \nReload page");
+  })
+}
+
+// function stopWebCam() {
+//     if (video) {
+//         video.pause();
+//         video.src = '';
+//         video.load();
+//     }
+
+//     if (cameraStream && cameraStream.stop) {
+//         cameraStream.stop();
+//     }
+//     stream = null;
+// }
