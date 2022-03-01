@@ -96,23 +96,20 @@ function previewFile() {
 
 
 loader.load("threed_objects/scene_2.glb",
-<<<<<<< Updated upstream
     function (gltf) {
         // scene.remove(gltf.scene);
         object = gltf.scene;
         scene.add(gltf.scene);
     }, undefined, function (error) {
-=======
-=======
+
 let object; //reference to loaded object
 // this method is what loads the 3d chair or whatever object put into the qoutes,
-loader.load('threed_objects/SheenChair.glb',z
+loader.load('threed_objects/SheenChair.glb',
 function(gltf){
     // scene.remove(gltf.scene);
     object = gltf.scene;
     scene.add(gltf.scene);
 }, undefined, function ( error ) {
->>>>>>> Stashed changes
 
         console.error(error);
     });
@@ -230,4 +227,4 @@ if (navigator.mediaDevices.getUserMedia) {
         .catch(function (error) {
             alert("Something went wrong \nReload page");
         })
-}
+    }
