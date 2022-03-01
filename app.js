@@ -12,6 +12,7 @@ app.use('/jsm/', express.static(path.join(__dirname, 'node_modules/three/example
 let port = process.env.PORT
 if(port == null || port == ""){
   port = 8000;
+  console.log("running");
 }
 
 app.listen(port);
