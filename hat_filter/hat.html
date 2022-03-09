@@ -32,7 +32,14 @@
       }
     </style> -->
     <!-- <canvas width="600" height="600" id='Canvas'></canvas> -->
-    <canvas width="600" height="600" id='jeeFaceFilterCanvas'></canvas>
+    <canvas  id='jeeFaceFilterCanvas'>
+      <script>
+                    var canvas = document.getElementById("jeeFaceFilterCanvas");
+
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+      </script>
+    </canvas>
   </body>
 </html>
  
