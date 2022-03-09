@@ -8,12 +8,11 @@ app.use('/build/', express.static(path.join(__dirname, 'node_modules/three/build
 app.use('/build/', express.static(path.join(__dirname, 'node_modules/dat.gui/build')));
 app.use('/jsm/', express.static(path.join(__dirname, 'node_modules/three/examples/jsm')));
 // app.use('/threed_objects/couch.obj', (path.join(__dirname, 'threed_objects/couch.obj')));
+app.use(express.static(__dirname + '/ar_js' ))
+app.use(express.static(__dirname + '/hat_filter' ))
+app.use(express.static(__dirname + '/ARglassTryOn' ))
 
-let port = process.env.PORT
-if(port == null || port == ""){
-  port = 8000;
-  console.log("running");
-}
+let port = process.env.PORT || 8000
 
 app.listen(port);
 // app.listen(port, () =>

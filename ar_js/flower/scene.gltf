@@ -1,0 +1,523 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 1158,
+      "max": [
+        1.8230140209197998,
+        0.18970400094985962,
+        9.6343822479248047
+      ],
+      "min": [
+        -1.1491169929504395,
+        -1.537371039390564,
+        7.4533162117004395
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 13896,
+      "componentType": 5126,
+      "count": 1158,
+      "max": [
+        0.99644750356674194,
+        0.98284822702407837,
+        0.89977729320526123
+      ],
+      "min": [
+        -0.99644750356674194,
+        -0.99931192398071289,
+        -0.87835985422134399
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 1158,
+      "max": [
+        0.81646102666854858,
+        -0.001323999953456223
+      ],
+      "min": [
+        0.14007300138473511,
+        -1.0555479526519775
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 6048,
+      "max": [
+        1157
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 27792,
+      "componentType": 5126,
+      "count": 498,
+      "max": [
+        1.3513079881668091,
+        1.3573659658432007,
+        3.8086099624633789
+      ],
+      "min": [
+        -1.2950459718704224,
+        -1.2889889478683472,
+        -0.064141996204853058
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 33768,
+      "componentType": 5126,
+      "count": 498,
+      "max": [
+        0.99869698286056519,
+        0.99869698286056519,
+        1
+      ],
+      "min": [
+        -0.99869698286056519,
+        -0.99869698286056519,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 9264,
+      "componentType": 5126,
+      "count": 498,
+      "max": [
+        1.8713209629058838,
+        0
+      ],
+      "min": [
+        0.041666001081466675,
+        -1
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 24192,
+      "componentType": 5125,
+      "count": 1872,
+      "max": [
+        497
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 39744,
+      "componentType": 5126,
+      "count": 3429,
+      "max": [
+        2.8016119003295898,
+        1.1576449871063232,
+        10.562967300415039
+      ],
+      "min": [
+        -2.0309329032897949,
+        -2.324023962020874,
+        6.4730329513549805
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 80892,
+      "componentType": 5126,
+      "count": 3429,
+      "max": [
+        0.99906200170516968,
+        0.99906200170516968,
+        0.2733149528503418
+      ],
+      "min": [
+        -0.96099573373794556,
+        -0.99906200170516968,
+        -0.93995988368988037
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 13248,
+      "componentType": 5126,
+      "count": 3429,
+      "max": [
+        1.0775619745254517,
+        9.9999999747524271e-07
+      ],
+      "min": [
+        9.7999996796716005e-05,
+        -1
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 31680,
+      "componentType": 5125,
+      "count": 8154,
+      "max": [
+        3428
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 122040,
+      "componentType": 5126,
+      "count": 513,
+      "max": [
+        1.5979419946670532,
+        0.45679000020027161,
+        8.937281608581543
+      ],
+      "min": [
+        -1.0032860040664673,
+        -1.3331090211868286,
+        2.9504139423370361
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 128196,
+      "componentType": 5126,
+      "count": 513,
+      "max": [
+        0.95017451047897339,
+        0.91672021150588989,
+        1
+      ],
+      "min": [
+        -0.9873427152633667,
+        -0.91576641798019409,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 40680,
+      "componentType": 5126,
+      "count": 513,
+      "max": [
+        2.2032299041748047,
+        0
+      ],
+      "min": [
+        0.087577000260353088,
+        -5.0118570327758789
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 64296,
+      "componentType": 5125,
+      "count": 1512,
+      "max": [
+        512
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "3Danielart (https://sketchfab.com/3Danielart)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/flower-with-vase-f011d24ce98a4de49dbb68a2472a8580",
+      "title": "Flower With Vase"
+    },
+    "generator": "Sketchfab-9.23.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 70344,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 44784,
+      "byteOffset": 70344,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 134352,
+      "byteOffset": 115128,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 249480,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/1597664249874-01_baseColor.jpeg"
+    },
+    {
+      "uri": "textures/Seamless_marble_texture_75_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "emissiveTexture": {
+        "index": 0,
+        "texCoord": 0
+      },
+      "name": "1597664249874-01",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.89386107257583614
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "emissiveTexture": {
+        "index": 1,
+        "texCoord": 0
+      },
+      "name": "Seamless_marble_texture_75",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85229931429915173
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "Stylizedplaingrass",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.7137,
+          0.50190000000000001,
+          0.086199999999999999,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.90224883913536458
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "Stylizedplaingrass1",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.13719999999999999,
+          0.54110000000000003,
+          0.050900000000000001,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.86588632335830185
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 13,
+            "POSITION": 12,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "name": "Sun flower with Vase.obj.cleaner.materialmerger.gles"
+    },
+    {
+      "mesh": 0,
+      "name": ""
+    },
+    {
+      "mesh": 1,
+      "name": ""
+    },
+    {
+      "mesh": 2,
+      "name": ""
+    },
+    {
+      "mesh": 3,
+      "name": ""
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ]
+}
+
