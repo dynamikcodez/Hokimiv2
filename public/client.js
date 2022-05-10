@@ -96,6 +96,7 @@ function previewFile() {
 
 
 
+
 // this method is what loads the 3d chair or whatever object put into the qoutes,
 loader.load('threed_objects/SheenChair.glb',
 function(gltf){
@@ -103,6 +104,14 @@ function(gltf){
     object = gltf.scene;
     scene.add(gltf.scene);
 }, undefined, function ( error ) {
+
+loader.load("threed_objects/scene_2.glb",
+    function (gltf) {
+        // scene.remove(gltf.scene);
+        object = gltf.scene;
+        scene.add(gltf.scene);
+    }, undefined, function (error) {
+
 
         console.error(error);
     });
@@ -195,6 +204,11 @@ function animate() {
             console.log("Intersect at ...")
         }
 
+
+    }
+
+
+
     }
 
     renderer.render(scene, camera);
@@ -220,4 +234,8 @@ if (navigator.mediaDevices.getUserMedia) {
         .catch(function (error) {
             alert("Something went wrong \nReload page");
         })
+
     }
+=======
+}
+
